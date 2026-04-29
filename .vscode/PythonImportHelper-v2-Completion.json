@@ -1,0 +1,72 @@
+[
+    {
+        "label": "pytest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pytest",
+        "description": "pytest",
+        "detail": "pytest",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "importPath": "app.math_utils",
+        "description": "app.math_utils",
+        "isExtraImport": true,
+        "detail": "app.math_utils",
+        "documentation": {}
+    },
+    {
+        "label": "divide",
+        "importPath": "app.math_utils",
+        "description": "app.math_utils",
+        "isExtraImport": true,
+        "detail": "app.math_utils",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "kind": 2,
+        "importPath": "app.math_utils",
+        "description": "app.math_utils",
+        "peekOfCode": "def add(a: int, b: int) -> int:\n    return a+b \ndef divide(a: int, b: int) -> float:\n    if b==0:\n        raise ValueError(\"Cannot divide by zero\")\n    return a/b",
+        "detail": "app.math_utils",
+        "documentation": {}
+    },
+    {
+        "label": "divide",
+        "kind": 2,
+        "importPath": "app.math_utils",
+        "description": "app.math_utils",
+        "peekOfCode": "def divide(a: int, b: int) -> float:\n    if b==0:\n        raise ValueError(\"Cannot divide by zero\")\n    return a/b",
+        "detail": "app.math_utils",
+        "documentation": {}
+    },
+    {
+        "label": "test_add",
+        "kind": 2,
+        "importPath": "tests.test_math_utils",
+        "description": "tests.test_math_utils",
+        "peekOfCode": "def test_add():\n    assert add(2,3) == 5 \ndef test_divide():\n    assert divide(10,2) == 5 \ndef test_divide_by_zero():\n    with pytest.raises(ValueError(\"Cannot divide by zero\")):\n        divide(10,0)",
+        "detail": "tests.test_math_utils",
+        "documentation": {}
+    },
+    {
+        "label": "test_divide",
+        "kind": 2,
+        "importPath": "tests.test_math_utils",
+        "description": "tests.test_math_utils",
+        "peekOfCode": "def test_divide():\n    assert divide(10,2) == 5 \ndef test_divide_by_zero():\n    with pytest.raises(ValueError(\"Cannot divide by zero\")):\n        divide(10,0)",
+        "detail": "tests.test_math_utils",
+        "documentation": {}
+    },
+    {
+        "label": "test_divide_by_zero",
+        "kind": 2,
+        "importPath": "tests.test_math_utils",
+        "description": "tests.test_math_utils",
+        "peekOfCode": "def test_divide_by_zero():\n    with pytest.raises(ValueError(\"Cannot divide by zero\")):\n        divide(10,0)",
+        "detail": "tests.test_math_utils",
+        "documentation": {}
+    }
+]
