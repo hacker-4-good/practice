@@ -1,1 +1,5 @@
+fastapi[standard]
+jinja2
+uvicorn
 pytest
+httpx

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Predition</title>
+</head>
+<body>
+    <h2>Enter Feature Value</h2>
+    <form action="/predict" method="post">
+        <input type="number" name="feature" step="any" required>
+        <button type="submit">Predict</button>
+    </form>
+    {% if prediction %}
+        <h3>Prediction: {{prediction}}</h3>
+    {% endif %}
+</body>
+</html>
